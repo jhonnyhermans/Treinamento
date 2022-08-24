@@ -8,13 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Treinamento.App
+namespace Treinamento.App.UserControls
 {
-    public partial class Form1 : Form
+    public partial class CommonListUserControl : UserControl
     {
-        public Form1()
+        public CommonListUserControl()
         {
             InitializeComponent();
         }
+
+        public bool VisibleEmailButtom { get => btnEmail.Visible; set => btnEmail.Visible = value; }
     }
 }
